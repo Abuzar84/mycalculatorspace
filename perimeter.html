@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimeter Calculator</title>
+    <link rel="stylesheet" href="perimeter.css">
+</head>
+<header>
+    <div class="heading">
+        <h1>My Calculator Space</h1>
+    </div>
+    <div class="button_container">
+        <div class="button_content">
+            <button type="button" onclick="window.location.href='index.html';">Home</button>
+            <button type="button" onclick="window.location.href='calculator.html';">Calculator</button>
+            <button type="button" onclick="window.location.href='trignometry.html';">Trignometry</button>
+            <button type="button" onclick="window.location.href='ExponentCalculator.html';">Exponent Calculator</button>
+            <button type="button" onclick="window.location.href='rootcalculator.html';">Root Calculator</button>
+            <button type="button" onclick="window.location.href='Area.html';">Area Calculator</button>
+            <button type="button" onclick="window.location.href='perimeter.html';">Perimeter Calculator</button>
+            <button type="button" onclick="window.location.href='surfacearea.html';">Surface Area Calculator</button>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="calc_area_peri">
+        <div class="calc_peri">
+            <form name="circle">
+                <label for="circle"><strong>Circle Perimeter Calculator</strong></label><br><br>
+                <input type="number" id="circle_r" placeholder="enter circle radius">
+                <select name="unit_circle" id="unit_circle_select">
+                    <option id="meter_circle" value="meter">Meter</option>
+                    <option id="inch_circle" value="inch">Inch</option>
+                    <option id="cm_circle" value="cm">CM</option>
+                </select><br><br>
+                <input type="reset" value="Clear">
+                <input type="button" value="Calculate" onclick="circlePer()">
+                <div class="res_per_cir" id="res_per_cir"></div>
+            </form>
+            <form name="square">
+                <label for="square"><strong>Square Perimeter Calculator</strong></label><br><br>
+                <input type="number" id="square" placeholder="enter value">
+                <select name="unit_square" id="unit_square_select">
+                    <option id="meter_square" value="meter">Meter</option>
+                    <option id="inch_square" value="inch">Inch</option>
+                    <option id="square_cm" value="cm">CM</option>
+                </select><br><br>
+                <input type="reset" value="Clear">
+                <input type="button" value="Calculate" onclick="squarePer()">
+                <div class="res_per_sqr" id="res_per_sqr"></div>
+            </form>
+            <form name="rectangle">
+                <label for="rectangle"><strong>Rectangle  Perimeter Calculator</strong></label><br><br>
+                <input type="number" id="rectangle_l" placeholder="enter value length">
+                <input type="number" id="rectangle_w" placeholder="enter value width">
+                <br><br>
+                <strong>Select Unit</strong>
+                <select name="unit_rectangle" id="unit_rectangle_select">
+                    <option id="meter_rectangle" value="meter">Meter</option>
+                    <option id="inch_rectangle" value="inch">Inch</option>
+                    <option id="rectangle_cm" value="cm">CM</option>
+                </select><br><br>
+                <input type="reset" value="Clear">
+                <input type="button" value="Calculate" onclick="rectanglePer()">
+                <div class="res_per_rec" id="res_per_rec"></div>
+            </form>
+            <form name="triangle">
+                <label for="triangle"><strong>Triangle  Perimeter Calculator</strong></label><br><br>
+                <input type="number" id="triangle_a" placeholder="enter a value ">
+                <input type="number" id="triangle_b" placeholder="enter b value">
+                <input type="number" id="triangle_c" placeholder="enter c value">
+                <br><br>
+                <strong>Select Unit</strong>
+                <select name="unit_triangle" id="unit_triangle_select">
+                    <option id="meter_triangle" value="meter">Meter</option>
+                    <option id="inch_triangle" value="inch">Inch</option>
+                    <option id="triangle_cm" value="cm">CM</option>
+                </select><br><br>
+                <input type="reset" value="Clear">
+                <input type="button" value="Calculate" onclick="trianglePer()">
+                <div class="res_per_tri" id="res_per_tri"></div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h3>My Calculator Space</h3>
+            <p>Your reliable tool for everyday calculations.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <a href="#"><img src="icons/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 My Calculator Space. All rights reserved.</p>
+    </div>
+</footer>
+<script src="perimeter.js"></script>
+<body>
+    
+</body>
+</html>
