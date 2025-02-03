@@ -51,7 +51,7 @@ main a:hover{
     text-decoration: underline;
 }
 .calc{
-    width: fit-content;
+    width: 6rem;
     height: fit-content;
     margin: 1em;
     text-align: center;

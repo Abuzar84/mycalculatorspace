@@ -54,6 +54,13 @@ form{
    border: solid;
    margin: 1%; 
 }
+.para_peri{
+    width: 90%;
+    text-align: left;
+}
+.para_peri h1, .formula{
+    text-align: center;
+}
 footer {
     background-color: #222;
     color: #fff;

@@ -25,7 +25,7 @@
                     <button type="button" onclick="window.location.href='trignometry.html';">Trignometry</button>
                     <button type="button" onclick="window.location.href='ExponentCalculator.html';">Exponent Calculator</button>
                     <button type="button" onclick="window.location.href='rootcalculator.html';">Root Calculator</button>
-                    <button type="button" onclick="window.location.href='Area.html';">Area Calculator</button>
+                    <button type="button" onclick="window.location.href='area.html';">Area Calculator</button>
                     <button type="button" onclick="window.location.href='perimeter.html';">Perimeter Calculator</button>
                     <button type="button" onclick="window.location.href='surfacearea.html';">Surface Area Calculator</button>
                 </div>
@@ -38,9 +38,14 @@
                         <label for="ball"><strong>Ball (Sphere) Surface Area</strong></label><br><br>
                         <input type="number" class="ball" id="ball" placeholder="Enter Radius of Ball">
                         <select name="unit_ball" id="unit_select_for_ball">
-                            <option value="meter" id="meter_ball" selected>Meter</option>
-                            <option value="inch" id="inch_ball">Inch</option>
-                            <option value="cm" id="cm_ball">CM</option>
+                            <option value="m" id="meter" selected>meter</option>
+                            <option value="m" id="millimeter">millimeter</option>
+                            <option value="km" id="kilometer">kilometer </option>
+                            <option value="cm" id="cm">cm</option>
+                            <option value="in" id="inch">inch</option>
+                            <option value="ft" id="foot">foot</option>
+                            <option value="yd" id="yard">yard</option>
+                            <option value="mi" id="mile">mile</option>
                         </select><br><br>
                         <input type="reset" value="Clear">
                         <input type="button" value="Calculate" onclick="surfaceball()">
@@ -52,9 +57,14 @@
                         <input type="number" class="cylinder_h_value" id="cylinder_h_value" placeholder="Enter Height"><br>
                         <strong>Select Unit</strong>
                         <select name="unit_cylinder" id="unit_select_for_cylinder">
-                            <option value="meter" id="meter_cylinder" selected>Meter</option>
-                            <option value="inch" id="inch_cylinder">Inch</option>
-                            <option value="cm" id="cm_cylinder">CM</option>
+                            <option value="m" id="meter_cylinder" selected>meter</option>
+                            <option value="m" id="millimeter_cylinder">millimeter</option>
+                            <option value="km" id="kilometer_cylinder">kilometer </option>
+                            <option value="cm" id="cm_cylinder">cm</option>
+                            <option value="in" id="inch_cylinder">inch</option>
+                            <option value="ft" id="foot_cylinder">foot</option>
+                            <option value="yd" id="yard_cylinder">yard</option>
+                            <option value="mi" id="mile_cylinder">mile</option>
                         </select><br><br>
                         <input type="reset" value="Clear">
                         <input type="button" value="Calculate" onclick="surfacecylinder()">
@@ -64,9 +74,14 @@
                         <label for="hamisphere_area"><strong>Hemisphere Surface Area</strong></label><br><br>
                         <input type="number" class="hemi_r" id="hemi_r" placeholder="Enter Radius of Hemisphere">
                         <select name="unit_hemisphere" id="unit_select_hemisphere">
-                            <option value="meter" id="meter_hemisphere">Meter</option>
-                            <option value="inch" id="inch_hemisphere">Inch</option>
+                            <option value="m" id="meter_hemisphere" selected>meter</option>
+                            <option value="m" id="millimeter_hemisphere">millimeter</option>
+                            <option value="km" id="kilometer_hemisphere">kilometer </option>
                             <option value="cm" id="cm_hemisphere">cm</option>
+                            <option value="in" id="inch_hemisphere">inch</option>
+                            <option value="ft" id="foot_hemisphere">foot</option>
+                            <option value="yd" id="yard_hemisphere">yard</option>
+                            <option value="mi" id="mile_hemisphere">mile</option>
                         </select><br><br>
                         <input type="reset" value="Clear">
                         <input type="button" value="Calculate" onclick="surfacehemisphere()">
@@ -78,9 +93,14 @@
                         <input type="number" class="cone_h" id="cone_h" placeholder="Enter Height of cone"><br>
                         <strong>Select unit</strong>
                         <select name="unit_cone" id="unit_select_cone">
-                            <option value="meter" id="meter_cone">Meter</option>
-                            <option value="inch" id="inch_cone">Inch</option>
+                            <option value="m" id="meter_cone" selected>meter</option>
+                            <option value="m" id="millimeter_cone">millimeter</option>
+                            <option value="km" id="kilometer_cone">kilometer </option>
                             <option value="cm" id="cm_cone">cm</option>
+                            <option value="in" id="inch_cone">inch</option>
+                            <option value="ft" id="foot_cone">foot</option>
+                            <option value="yd" id="yard_cone">yard</option>
+                            <option value="mi" id="mile_cone">mile</option>
                         </select>
                         <br><br>
                         <input type="reset" value="Clear">
@@ -91,9 +111,14 @@
                         <label for="cube"><strong>Cube Surface Area</strong></label><br><br>
                         <input type="number" class="cube_a" id="cube_a" placeholder="Enter Length of a side">
                         <select name="unit_cube" id="unit_select_for_cube">
-                            <option value="meter" id="meter_cube" selected>Meter</option>
-                            <option value="inch" id="inch_cube">Inch</option>
-                            <option value="cm" id="cm_cube">CM</option>
+                            <option value="m" id="meter_cube" selected>meter</option>
+                            <option value="m" id="millimeter_cube">millimeter</option>
+                            <option value="km" id="kilometer_cube">kilometer </option>
+                            <option value="cm" id="cm_cube">cm</option>
+                            <option value="in" id="inch_cube">inch</option>
+                            <option value="ft" id="foot_cube">foot</option>
+                            <option value="yd" id="yard_cube">yard</option>
+                            <option value="mi" id="mile_cube">mile</option>
                         </select><br><br>
                         <input type="reset" value="Clear">
                         <input type="button" value="Calculate" onclick="surfacecube()">
@@ -106,9 +131,14 @@
                         <input type="number" class="cuboid_h" id="cuboid_h" placeholder="Enter Height"><br>
                         <strong>Select unit</strong>
                         <select name="unit_cuboid" id="unit_select_cuboid">
-                            <option value="meter" id="meter_cuboid">Meter</option>
-                            <option value="inch" id="inch_cuboid">Inch</option>
+                            <option value="m" id="meter_cuboid" selected>meter</option>
+                            <option value="m" id="millimeter_cuboid">millimeter</option>
+                            <option value="km" id="kilometer_cuboid">kilometer </option>
                             <option value="cm" id="cm_cuboid">cm</option>
+                            <option value="in" id="inch_cuboid">inch</option>
+                            <option value="ft" id="foot_cuboid">foot</option>
+                            <option value="yd" id="yard_cuboid">yard</option>
+                            <option value="mi" id="mile_cuboid">mile</option>
                         </select>
                         <br><br>
                         <input type="reset" value="Clear">
@@ -297,9 +327,9 @@
                 </div>
                 <div class="footer-social">
                     <h4>Follow Us</h4>
-                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61572219166919">Facebook&ensp;</a>
+                    <a href="https://x.com/mycalculatorsp">Twitter&ensp;</a>
+                    <a href="https://www.instagram.com/mycalculatorspace/">Instagram&ensp;</a>
                 </div>
             </div>
             <div class="footer-bottom">
