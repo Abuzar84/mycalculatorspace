@@ -82,17 +82,17 @@ footer {
     padding: 20px;
 }
 
-.footer-content, .footer-links, .footer-social, .footer-email{
+.footer-content, .footer-links, .footer-social, .footer-email {
     flex: 1 1 300px;
     padding: 10px;
 }
 
-.footer-content h3, .footer-links h4, .footer-social h4, .footer-email h4{
+.footer-content h3, .footer-links h4, .footer-social h4, .footer-email h4 {
     font-size: 18px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-.footer-email a{
+.footer-email a {
     text-decoration: none;
     color: #fff;
 }
