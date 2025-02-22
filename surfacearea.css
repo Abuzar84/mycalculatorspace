@@ -99,15 +99,19 @@ footer {
     padding: 20px;
 }
 
-.footer-content, .footer-links, .footer-social {
+.footer-content, .footer-links, .footer-social, .footer-email{
     flex: 1 1 300px;
     padding: 10px;
 }
 
-.footer-content h3, .footer-links h4, .footer-social h4 {
+.footer-content h3, .footer-links h4, .footer-social h4, .footer-email h4{
     font-size: 18px;
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+.footer-email a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .footer-links ul {
@@ -128,17 +132,6 @@ footer {
     color: #fff;
     text-decoration: underline;
 }
-
-.footer-social a img {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-}
-
-.footer-social a:hover img {
-    filter: brightness(1.2);
-}
-
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
