@@ -1,21 +1,64 @@
 <!doctype html>
-
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <meta name="description" content="My Calculator Space - A collection of online calculators for various mathematical computations, including perimeter, surface area, and trigonometry.">
-        <meta name="keywords" content="online calculator, perimeter calculator, surface area calculator, trigonometry calculator, math tools, geometry calculations">
-        <meta name="author" content="My Calculator Space">
+        <meta name="title" content="Best Online Calculator for Students - My Calculator Space">
+        <meta name="description" content="My Calculator Space offers free online calculators for math, science, and everyday calculations. Perfect for students, professionals, and anyone needing quick and accurate results.">
+        <meta name="keywords" content="best online calculator for students, online calculators, math calculators, science calculators, free calculators, physics calculators, finance calculators, calculator online, maths solver, my calculator space">
+        <meta property="og:title" content="Best Online Calculator for Students - My Calculator Space">
+        <meta property="og:description" content="My Calculator Space offers free online calculators for math, science, and everyday calculations. Perfect for students, professionals, and anyone needing quick and accurate results.">
+        <meta property="og:image" content="https://mycalculatorspace.in/preview-image.jpg">
+        <meta property="og:url" content="https://mycalculatorspace.in">
+        <meta property="og:type" content="website">
         <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:site_name" content="My Calculator Space">
+        <meta property="og:locale" content="en_US">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="canonical" href="https://mycalculatorspace.in">
 
-        <title>My Calculator</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8F8WRKPJJ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-C8F8WRKPJJ');
+        </script>
+
+        <title>Best Online Calculator for Students - My Calculator Space</title>
 
         <!-- Load external CSS styles -->
-        <link rel="icon" href="My_Calculator_Space.png" type="image/webp">
+        <link rel="icon" href="My_Calculator_Space.png" type="image/webp" alt="My Calculator Space Logo">
         <link rel="stylesheet" href="styles.css">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9016296977652192"
-        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="basicstyle.css">
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "My Calculator Space",
+              "url": "https://mycalculatorspace.in",
+              "description": "A free online calculator website for math, science, and daily computations.",
+              "publisher": {
+                "@type": "Organization",
+                "name": "My Calculator Space",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://mycalculatorspace.in/My_Calculator_Space.png",
+                  "width": 200,
+                  "height": 200
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "email": "customer@mycalculatorspace.in",
+                  "contactType": "customer service"
+                }
+              }
+            }
+        </script>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9016296977652192" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -24,59 +67,53 @@
                 <h1>My Calculator Space</h1>
             </div>
             <div class="button_container">
-                <div class="button_content">
-                    <button type="button" onclick="window.location.href='index.html';">Home</button>
-                    <button type="button" onclick="window.location.href='calculator.html';">Calculator</button>
-                    <button type="button" onclick="window.location.href='trignometry.html';">Trigonometry</button>
-                    <button type="button" onclick="window.location.href='ExponentCalculator.html';">Exponent Calculator</button>
-                    <button type="button" onclick="window.location.href='rootcalculator.html';">Root Calculator</button>
-                    <button type="button" onclick="window.location.href='area.html';">Area Calculator</button>
-                    <button type="button" onclick="window.location.href='perimeter.html';">Perimeter Calculator</button>
-                    <button type="button" onclick="window.location.href='surfacearea.html';">Surface Area Calculator</button>
-                </div>
+                <div class="button_content" id="button_content"></div>
             </div>
         </header>
         <main>
-            <div class="calc" id="calc">
+            <marquee style="display:block; background-color:#4D55CC; "><h2>Welcome to My Calculator Space Explore our collection of free online calculators designed to help students, professionals, and anyone in need of quick and accurate calculations. From basic math to advanced science tools, we've got you covered!</h2>
+            </marquee>
+            
+            <div class="calc">
                 <a href="calculator.html">
-                <img src="calculator.png" style="width: 100px;">
-                <h4>Calculator</h4>
+                    <img src="calculator.png" alt="Basic Calculator" loading="lazy">
+                    <h3>Basic Calculator</h3>
                 </a>
             </div>
-            <div class="calc" id="calc">
+            <div class="calc">
                 <a href="trignometry.html">
-                <img src="trignometry.webp" style="width: 100px;">
-                <h4>Trignometry</h4>
+                    <img src="trignometry.webp" alt="Trigonometry Calculator" loading="lazy">
+                    <h3>Trigonometry Calculator</h3>
                 </a>
             </div>
-            <div class="calc" id="calc">
+            <div class="calc">
                 <a href="ExponentCalculator.html">
-                <img src="Exponent.webp" style="width: 100px;">
-                <h4>Exponent Calculator</h4>
+                    <img src="Exponent.webp" alt="Exponent Calculator" loading="lazy">
+                    <h3>Exponent Calculator</h3>
                 </a>
             </div>
-            <div class="calc" id="calc">
+            <div class="calc">
                 <a href="rootcalculator.html">
-                <img src="root.webp" style="width: 100px;">
-                <h4>Root Calculator</h4>
+                    <img src="root.webp" alt="Root Calculator" loading="lazy">
+                    <h3>Root Calculator</h3>
                 </a>
             </div>
-            <div class="calc" id="calc">
+            <div class="calc">
                 <a href="area.html">
-                <img src="area.webp" style="width: 100px;">
-                <h4>Area Calculator</h4>
+                    <img src="area.webp" alt="Area Calculator" loading="lazy">
+                    <h3>Area Calculator</h3>
                 </a>
             </div>
-            <div class="calc" id="calc">
+            <div class="calc">
                 <a href="perimeter.html">
-                <img src="perimeter.webp" style="width: 100px;">
-                <h4> Perimeter Calculator</h4>
+                    <img src="perimeter.webp" alt="Perimeter Calculator" loading="lazy">
+                    <h3>Perimeter Calculator</h3>
                 </a>
             </div>
-            <div class="calc" id="calc">
+            <div class="calc">
                 <a href="surfacearea.html">
-                <img src="surfacearea.webp" style="width: 100px;">
-                <h4>Surface Area Calculator</h4>
+                    <img src="surfacearea.webp" alt="Surface Area Calculator" loading="lazy">
+                    <h3>Surface Area Calculator</h3>
                 </a>
             </div>
         </main>
@@ -101,13 +138,15 @@
                     <a href="https://www.instagram.com/sayyedabuzar844/">Instagram</a>&ensp;
                 </div>
                 <div class="footer-email">
-                    <a href="mailto:customer@mycalculatorspace.in"><h4>Contact Us</h4>
+                    <a href="mailto:customer@mycalculatorspace.in"><h4>Contact Us</h4></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 My Calculator Space. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> My Calculator Space. All rights reserved.</p>
+                <script src="year.js"></script>
             </div>
-        </footer>        
+        </footer>
+        <script src="button.js"></script>
+        <script src="consent.js"></script>
     </body>
-
 </html>

@@ -6,9 +6,19 @@ function areacircle(){
         document.getElementById("res_area").innerText = "Please enter a valid number.";
         return;
     }
-    const result = Math.PI*circle_value*circle_value;
+    const Pie = Math.PI;
+    const result = Pie.toFixed(5)*circle_value*circle_value;
     const result_in_format = result.toLocaleString();
-    document.getElementById("res_area").innerHTML = `Your Circle Area is ${result_in_format} ${unit}<sup>2</sup>`;  
+    const circleSol = [
+        `Circle Area = π<i>r</i><sup>2</sup>`,
+        `= ${Pie.toFixed(5)} × ${circle_value} <sup>2</sup>`,
+        `= ${Pie.toFixed(5)} × ${circle_value*circle_value}`,
+        `= ${result_in_format} ${unit}<sup>2</sup>`,
+        `Your Circle Area is ${result_in_format} ${unit}<sup>2</sup>`
+    ];
+    document.getElementById("res_area").innerHTML = circleSol.map(sol => 
+        `<div>${sol}</div>`
+    ).join("");  
     
 }
 function areasquare(){
@@ -20,7 +30,15 @@ function areasquare(){
     }
     const res_square = square_side**2;
     const res_square_format = res_square.toLocaleString();
-    document.getElementById("res_area_square").innerHTML = `Your Square Area is ${res_square_format} ${unit_select_square}<sup>2</sup>`; 
+    const squareSol = [
+        `Square Area = <i>s</i> <sup>2</sup>`,
+        `= ${square_side} <sup>2</sup>`,
+        `= ${res_square_format} ${unit_select_square}<sup>2</sup>`,
+        `Your Square Area is ${res_square_format} ${unit_select_square}<sup>2</sup>`
+    ];
+    document.getElementById("res_area_square").innerHTML = squareSol.map(sol => 
+        `<div>${sol}</div>`
+    ).join(""); 
 }
 function arearectangle(){
     const rectangle_length = parseFloat(document.getElementById("rectangle_length").value);
@@ -32,7 +50,14 @@ function arearectangle(){
     }
     const res_rectangle = rectangle_length*rectangle_width;
     const res_rectangle_format = res_rectangle.toLocaleString();
-    document.getElementById("res_area_rectangle").innerHTML =`Your Rectangle Area is ${res_rectangle_format} ${unit_select_rectangle}<sup>2</sup>`;
+    const rectSol = [
+        `Rectangle Area = <i>l</i> × <i>w</i>`,
+        `= ${rectangle_length} × ${rectangle_width}`,
+        `= ${res_rectangle_format} ${unit_select_rectangle}<sup>2</sup>`,
+        `Your Rectangle Area is ${res_rectangle_format} ${unit_select_rectangle}<sup>2</sup>`
+    ];
+    document.getElementById("res_area_rectangle").innerHTML = rectSol.map(sol => 
+    `<div>${sol}</div>`).join("");
 }
 function areatriangle(){
     const triangle_height = parseFloat(document.getElementById("triangle_height").value);
@@ -44,5 +69,12 @@ function areatriangle(){
     }
     const res_triangle = 1/2*triangle_base*triangle_height;
     const res_triangle_format = res_triangle.toLocaleString();
-    document.getElementById("res_area_triangle").innerHTML =`Your Triangle Area is ${res_triangle_format} ${unit_select_triangle}<sup>2</sup>`;
+    const triSol = [
+        `Triangle Area = 1/2 × <i>b</i> × <i>h</i>`,
+        `= 1/2 × ${triangle_base} × ${triangle_height}`,
+        `= ${res_triangle_format} ${unit_select_triangle} <sup>2</sup>`,
+        `Your Triangle Area is ${res_triangle_format} ${unit_select_triangle}<sup>2</sup>`
+        ];
+    document.getElementById("res_area_triangle").innerHTML = triSol.map(sol => 
+    `<div>${sol}</div>`).join("");
 }
