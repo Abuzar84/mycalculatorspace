@@ -1,3 +1,7 @@
+<?php
+// Include the tracking script
+include 'track_visitor.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -227,9 +231,9 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="privacy.php">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-social">

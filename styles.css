@@ -1,5 +1,4 @@
 main{
-    width: 100%;
     margin: auto;
     flex: 1;
 }
@@ -12,12 +11,13 @@ main a:hover{
     text-decoration: underline;
 }
 .calc{
-    width: 7rem;
+    width: 100px;
     height: fit-content;
     margin: 1em;
+    font-size: 12px;
     text-align: center;
     display: inline-block;
 }
 .calc img{
-    width: 100px;
+    width: 90px;
 }

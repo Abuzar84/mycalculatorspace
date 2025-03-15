@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
 }
 body{
     width: 100vw;
@@ -15,22 +16,16 @@ body{
 }
 header{
     background-color: red;
-    width: 100%;
     height: auto;
-}
-.heading{
-    line-height: 3em;
 }
 .button_container{
     background-color: yellow;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    width: 100%;
     text-align: center;
 }
 .button_content{
-    width: 100%;
     margin: auto;
 }
 .mainbuttons{
@@ -48,9 +43,10 @@ header{
 }
 
 footer {
+    width: 100vw;
     background-color: #222;
     color: #fff;
-    padding: 10px 0;
+    padding: 2px;
     text-align: center;
     font-family: Arial, sans-serif;
 }
@@ -60,14 +56,12 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin:auto;
     padding: 2%;
 }
 
 .footer-content, .footer-links, .footer-social, .footer-email {
-    flex: 1 1 150px;
-    padding: 10px;
+    flex: 1;
 }
 
 .footer-content h3, .footer-links h4, .footer-social h4, .footer-email h4 {
@@ -90,7 +84,7 @@ footer {
 }
 
 .footer-links ul li {
-    margin: 5px 0;
+    margin: auto;
 }
 
 .footer-links ul li a {

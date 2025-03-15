@@ -1,14 +1,14 @@
 const buttons = document.getElementById("button_content");
 
 const addButtons = [
-    { name: "Home", url: "index.html" },
-    { name: "Calculator", url: "calculator.html" },
-    { name: "Trigonometry", url: "trignometry.html" },
-    { name: "Exponent Calculator", url: "ExponentCalculator.html" },
-    { name: "Root Calculator", url: "rootcalculator.html" },
-    { name: "Area Calculator", url: "area.html" },
-    { name: "Perimeter Calculator", url: "perimeter.html" },
-    { name: "Surface Area Calculator", url: "surfacearea.html" }
+    { name: "Home", url: "index.php" },
+    { name: "Calculator", url: "calculator.php" },
+    { name: "Trigonometry", url: "trignometry.php" },
+    { name: "Exponent Calculator", url: "ExponentCalculator.php" },
+    { name: "Root Calculator", url: "rootcalculator.php" },
+    { name: "Area Calculator", url: "area.php" },
+    { name: "Perimeter Calculator", url: "perimeter.php" },
+    { name: "Surface Area Calculator", url: "surfacearea.php" }
 ];
 
 buttons.innerHTML = addButtons.map(but => 
